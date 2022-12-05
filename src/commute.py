@@ -61,11 +61,7 @@ def split_date_continues():
     return final
 
 def bicycle_timeseries():
-    a = split_date_continues()
-    a["Date"] = pd.to_datetime(a[["Year", "Month", "Day", "Hour"]])
-    a.drop(columns=["Year", "Month", "Day", "Hour"], inplace=True)
-    a.set_index("Date", inplace=True)
-    return a
+    pass
 
 
 def commute():
